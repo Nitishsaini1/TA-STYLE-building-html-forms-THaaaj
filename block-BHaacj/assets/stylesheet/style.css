@@ -1,0 +1,297 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  Custom styles */
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.hover-header a:hover{
+    color: var(--secondary) !important;
+}
+/* variables */
+:root{
+    --primary: rgb(230, 230, 230);
+    --secondary: rgb(105, 198, 186);
+    --tertiary: #c66995;
+}
+/*  flex */
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-2{
+    display: flex;
+}
+.align-center
+{
+    align-items:center;
+    
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  styles  */
+body{
+    line-height: 1.5;
+   
+    padding: 2% 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+   
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container-two{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/*  buttons */
+.btn{
+    width: 200px;
+    height: 40px;
+    border: 0;
+    font-weight: 600;
+    background-color: var(--secondary);
+    color: #fff;
+    margin-top: 12px ;
+
+}
+.btn-primary{
+    font-size: 16px;
+}
+.btn-seconary{
+    background-color: #fff;
+    color: var(--tertiary);
+}
+
+/*  headings */
+h1{
+
+    font-size: 40px;
+    font-weight: 900;
+}
+h2{
+    font-size: 40px;
+    letter-spacing: 9px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding-top: 10%;
+}
+h3{
+    font-size: 36px;
+
+}
+h4{
+    font-size: 29px;
+
+}
+
+/*  header */
+.container-header a{
+      font-size: 20px;
+      font-weight: 600 ;
+      padding: 28px;
+      color: rgb(12, 11, 11);
+
+}
+.blue-hover{
+    color: var(--secondary)!important;
+}
+/*  article-heading */
+main{
+    background-color: var(--primary);
+}
+.container-two
+strong{
+    font-size: 36px;
+    font-weight: 900;
+}
+.container-heading-center{
+    text-align: center;
+    background-color: rgb(237, 235, 235);
+    padding: 2% 12%;
+}
+.container-heading-center p{
+    color: #696969;
+}
+/* banner  */
+.banner-image{
+    width: 100%;
+    height: 700px;
+    background:linear-gradient(rgb(22,12,15,0.7), rgb(6,8,8,0.5)),  url(../media/hero/banner.jpg);
+}
+.header-banner{
+    text-align: center;
+}
+.header-banner blockquote{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+}
+.header-banner i{
+    font-size: 30px;
+    color: var(--secondary);
+}
+.form-control-1{
+    background-color: #fff;
+    width: 70%;
+    height: 300px;
+}
+/*  tourist places */
+.tourist-place{
+    background-color: #fff;
+}
+.tourist-aside-container{
+    background-color: var(--secondary);
+    color: #fff;
+    padding: 5%;
+}
+.europe{
+    position: relative;
+    right: 109px;
+}
+.asia{
+    position: relative;
+    left: 129px;
+}
+.tourist-aside-icon i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(23, 26, 22, 0.7);
+    width: 100px;
+    height: 40px;
+    margin-right: 7px;
+    color: #fff;
+}
+.aside-pink-color{
+    background-color: var(--tertiary);
+}
+figcaption{
+    padding-left: 12px;
+    color: #fff;
+}
+.map-background-color{
+    background-color: var(--secondary);
+    padding: 0 12px;
+  
+}
+.asia-container{
+    
+    width: 190px;
+    height: 100%;
+    background-color: var(--tertiary);
+}
+.map-background-color figure{
+    width: 14%;
+    height: 100%;
+    padding: 12px 16px;
+}
+.asia-container figcaption{
+    padding-left: 32px;
+   
+}
+/* resorts */
+.resort-container{
+    padding: 50px 0;
+}
+.resorts{
+    padding: 20px ;
+}
+.resorts p{
+    color: #8c8c8c;
+    padding-top: 15px ;
+}
+.resorts q{
+    color: var(--tertiary);
+    font-weight: 600;
+    
+}
+.pricing{
+    background-color: var(--secondary);
+}
+.pricing-text{
+  
+    color: #fff;
+    width: 200px;
+}
+.pricing-text blockquote{
+    font-size: 23px;
+       padding-left: 17px;
+}
+.pricing-text  a{
+    color:#fff;
+    font-size: 10px;
+    justify-content: none;
+    letter-spacing: 2px;
+}
+.pricing a:hover{
+    color: rgb(230, 230, 230);
+}
+.asia-container-margin-bottom{
+    margin-bottom: 20px;
+}
+.btn-third{
+    max-width: 120px;
+    margin: 0 auto;
+}
+.btn-third a{
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.footer{
+    background-color: var(--secondary);
+    color: var(--primary);
+}
