@@ -25,17 +25,17 @@
         </div>
         <div class="hover-header" >
            <ul class="flex-2 container-header">
-               <li><a class="blue-hover" href="#">Home </a></li>
-               <li><a href="#">Top Destination</a></li>
-               <li><a href="#">Recommended Places</a></li>
-               <li><a href="#">Contact Us</a></li>
+               <li><a class="blue-hover" href="#home">Home </a></li>
+               <li><a href="#destination">Top Destination</a></li>
+               <li><a href="#places">Recommended Places</a></li>
+               <li><a href="#contact">Contact Us</a></li>
            </ul>
         </div>
         
 
     </header>
     <main>
-        <section class="container-two banner-image">
+        <section id="home" class="container-two banner-image">
             <article class="header-banner">
                 <h2>LET'S BEGIN</h2>
                 <img src="assets/media/hero/dots-3.png" alt="three dots">
@@ -43,69 +43,87 @@
                 <figure>
                     <i class="fas fa-chevron-circle-down"></i>
                 </figure>
-                <form action="index.html" class=" form-control-1">
-                    <fieldset>
-                      <label for="destination">
+                      <form action="" class="flex item-start">
+                          <fieldset class="flex-46">
+                              <label for="destination">Choose your destination</label>
+                              <input 
+                              class="form-control" 
+                              type="text"
+                              id="destination"
+                              name="destination" 
+                              placeholder="Type Your destination">
+                              <div class="flex margin-top">
+                                  <div>
 
-                          choose your Destination
-                          
-                          <input type="text" name="destination" placeholder="Type your destintion...">
-                        </label> 
-                        <label>How many rooms?
+                                      <label for="check-in">Check in date</label>
+                                      <input
+                                      class="form-control" 
+                                      type="date"
+                                      name="date"
+                                      placeholder="Check In"
+                                      id="check-in">
+                                    </div>
+                                    <div>
 
-                            <select name="room" id="rooms">
-                                <option value="1 room"> 1 Room</option>
-                                <option value="2 room"> 2 Room</option>
-                                <option value="3 room"> 3 Room</option>
-                                <option value="4 room"> 4 Room</option>
-                                <option value="5 room"> 5 Room</option>
-                            </select>
-                        </label>
-                        <label for="rooms">
-                            Adult
-                            <select name="numbers" id="no-of-adult">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
-                        </label>
-                        <label for="children">
-                            Children
-                            <select name="children" id="no-of-children">
+                                        <label for="check-out">Check out date</label>
+                                        <input 
+                                        class="form-control"  
+                                        type="date" 
+                                        name="date" 
+                                        placeholder="Check out date" 
+                                        id="check-out">
+                                    </div>
+                                </div>
+                                </fieldset>
+                          <fieldset class="flex-46">
+                              <div class="flex">
+                                  <div>
 
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <label for="check-in-date">   Check-in-date
-                            <input type="text"
-                            class="check-in"
-                            name="check-in-date"
-                            placeholder="Check in">
+                                      <label for="room">How Many Room? </label>
+                                      <select class="form-control"  name="room" id="room">
+                                        
+                                              <option value="1">1 Room</option>
+                                              <option value="2">2 Room</option>
+                                              <option value="3">3 Room</option>
+                                              <option value="4">4 Room</option>
+                                              <option value="5">5 Room</option>
+                                            </select>
+                                  </div>
+                                   <div>
 
-                        </label>
-                        <label for="check-out-date"> check-out-date
-                            <input type="text"
-                            class="check-out"
-                            name="check-out-date"
-                            placeholder="check out">
-                        </label>
-                        <input type="text" class="btn btn-tertiary" value="submit" placeholder="check avaailability">
-                    </fieldset>
-                </form>
+                                       <label for="adult">Adult</label>
+                                       <select class="form-control"  name="adult" id="adult">
+                                           <option value="1">1</option>
+                                           <option value="2">2 </option>
+                                           <option value="3">3 </option>
+                                           <option value="1">1 </option>
+                                           <option value="4">4 </option>
+                                           <option value="5">5 </option>
+                                        </select>
+                                    </div>
+                                    <div>
+
+                                        <label for="child">Child</label>
+                                        <select  class="form-control" name="child" id="child">
+                                            <option value="o">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2 </option>
+                                            <option value="3">3 </option>
+                                            <option value="1">1 </option>
+                                            <option value="4">4 </option>
+                                            <option value="5">5 </option>
+                                        </select>
+                                    </div>
+                                    </div>
+                                    <div class="margin-top">
+
+                                        <input class="btn btn-primary  " type="submit" value="Check Availability">
+                                    </div>
+                          </fieldset>
+                      </form>
             </article>
         </section>
-
-           <section class=" container-two  container-heading-center">
+           <section id="destination" class=" container-two  container-heading-center">
             <article>
 
                 <h3>YOUR <strong>JOURNEY</strong> IS OUR PRIORITY</h3>
@@ -116,9 +134,9 @@
              </button>
            </section>
            <!-- tourist places Europe's -->
-           <section class="container-two">
+           <section  class="container-two">
                <article class="flex tourist-place">
-                   <figure>
+                   <figure class="font-0">
                        <img src="assets/media/hero/tm-img-01.jpg" alt="bautiful island">
                     </figure>
                     <aside class="flex-2 align-center tourist-aside-icon europe">
@@ -137,7 +155,7 @@
                </article>
            </section>
            <!-- tourist place Asia's -->
-           <section class="container-two">
+           <section  class="container-two">
                <article class="flex tourist-place">
                 <aside class="flex-2 align-center tourist-aside-icon asia">
                <div class=" tourist-aside-container aside-pink-color">
@@ -150,7 +168,7 @@
                <i class="fas fa-chevron-circle-left"></i>
                <i class="fas fa-chevron-circle-right"></i>
             </aside>
-                   <figure>
+                   <figure  class="font-0">
                        <img src="assets/media/hero/tm-img-02.jpg" alt="bautiful island">
                     </figure>
                   
@@ -159,7 +177,7 @@
            <!-- tourist place America's -->
            <section class="container-two">
             <article class="flex tourist-place">
-                <figure>
+                <figure  class="font-0">
                     <img src="assets/media/hero/tm-img-03.jpg" alt="bautiful island">
                  </figure>
                  <aside class="flex-2 align-center tourist-aside-icon europe">
@@ -180,32 +198,39 @@
            <!-- tuorists place maps -->
            <section class="container-two">
                <article  class="flex-2 map-background-color center " >
-                   <figure> <img src="assets/media/map/north-america.png" alt="north-ameerica"><figcaption>NORTH AMERICA</figcaption></figure>
-                   <figure> <img src="assets/media/map/south-america.png" alt="south-ameerica"><figcaption>SOUTH AMERICA</figcaption></figure>
-                   <figure> <img src="assets/media/map/europe.png" alt="europe"><figcaption>EUROPE</figcaption></figure>
-                   <figure class="asia-container"> <img src="assets/media/map/asia.png" alt="asia"><figcaption>ASIA</figcaption></figure>
-                   <figure> <img src="assets/media/map/africa.png" alt="africa"><figcaption>AFRICA</figcaption></figure>
-                   <figure> <img src="assets/media/map/australia.png" alt="australia"><figcaption>AUSTRALIA</figcaption></figure>
-                   <figure> <img src="assets/media/map/antartica.png" alt="antartica"><figcaption>ANTARTICA</figcaption></figure>
+                   <figure> 
+                       <img src="assets/media/map/north-america.png" alt="north-ameerica"><figcaption>NORTH AMERICA</figcaption></figure>
+                   <figure> 
+                       <img src="assets/media/map/south-america.png" alt="south-ameerica"><figcaption>SOUTH AMERICA</figcaption></figure>
+                   <figure> 
+                       <img src="assets/media/map/europe.png" alt="europe"><figcaption>EUROPE</figcaption></figure>
+                   <figure class="asia-container">
+                        <img src="assets/media/map/asia.png" alt="asia"><figcaption>ASIA</figcaption></figure>
+                   <figure>
+                        <img src="assets/media/map/africa.png" alt="africa"><figcaption>AFRICA</figcaption></figure>
+                   <figure>
+                        <img src="assets/media/map/australia.png" alt="australia"><figcaption>AUSTRALIA</figcaption></figure>
+                   <figure>
+                        <img src="assets/media/map/antartica.png" alt="antartica"><figcaption>ANTARTICA</figcaption></figure>
                </article>
            </section>
            <!--  resort locations and their prices -->
-           <section class=" tourist-place container-two  resort-container ">
+           <section id="places" class=" tourist-place container-two  resort-container ">
                <article class="container flex asia-container-margin-bottom">
-                     <figure>
+                     <figure class="font-0">
                          <img src="assets/media/hero/tm-img-06.jpg" alt="peoples nearby beach">
                      </figure>
-                     <div class="resorts">
+                     <div class="resorts ">
 
                          <h4>ASIA RESORT HOTEL</h4>
                      <q>Singapore</q>
                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt sit dolor odio nemo, consectetur perspiciatis sunt quasi aliquam iste itaque  vel in!</p>
                     </div>
-                    <figure class="pricing">
+                    <figure class="pricing  font-0">
 
                         <img src="assets/media/hero/button-curve.png" alt="curve image">
                     </figure>
-                    <div class="pricing pricing-text">
+                    <div class="pricing pricing-text  font-0 center">
                         <cite>
 
                             <blockquote>$440</blockquote>
@@ -215,7 +240,7 @@
                      
                </article>
                <article class="container flex asia-container-margin-bottom">
-                     <figure>
+                     <figure class=" font-0 ">
                          <img src="assets/media/hero/tm-img-07.jpg" alt="peoples nearby beach">
                      </figure>
                      <div class="resorts">
@@ -224,11 +249,11 @@
                      <q>Yangon,Myanmar</q>
                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt sit dolor odio nemo, consectetur perspiciatis sunt quasi aliquam iste itaque  vel in!</p>
                     </div>
-                    <figure class="pricing">
+                    <figure class="pricing  font-0 ">
 
                         <img src="assets/media/hero/button-curve.png" alt="curve image">
                     </figure>
-                    <div class="pricing pricing-text">
+                    <div class="pricing pricing-text  font-0  center">
                         <cite>
 
                             <blockquote>$450</blockquote>
@@ -238,7 +263,7 @@
                      
                </article>
                <article class="container flex asia-container-margin-bottom ">
-                     <figure>
+                     <figure class=" font-0 ">
                          <img src="assets/media/hero/tm-img-05.jpg" alt="peoples nearby beach">
                      </figure>
                      <div class="resorts">
@@ -247,11 +272,11 @@
                      <q>Bangkok, Thailand</q>
                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt sit dolor odio nemo, consectetur perspiciatis sunt quasi aliquam iste itaque  vel in!</p>
                     </div>
-                    <figure class="pricing">
+                    <figure class="pricing  font-0 ">
 
                         <img src="assets/media/hero/button-curve.png" alt="curve image">
                     </figure>
-                    <div class="pricing pricing-text">
+                    <div class="pricing pricing-text  font-0   center">
                         <cite>
 
                             <blockquote>$460</blockquote>
@@ -261,7 +286,7 @@
                      
                </article>
                <article class="container flex asia-container-margin-bottom">
-                     <figure>
+                     <figure class=" font-0 ">
                          <img src="assets/media/hero/tm-img-04.jpg" alt="peoples nearby beach">
                      </figure>
                      <div class="resorts">
@@ -270,11 +295,11 @@
                      <q>Vietnam,Laos</q>
                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt sit dolor odio nemo, consectetur perspiciatis sunt quasi aliquam iste itaque  vel in!</p>
                     </div>
-                    <figure class="pricing">
+                    <figure class="pricing  font-0 ">
 
                         <img src="assets/media/hero/button-curve.png" alt="curve image">
                     </figure>
-                    <div class="pricing pricing-text center">
+                    <div class="pricing pricing-text  font-0  center">
                         <cite>
 
                             <blockquote>$470</blockquote>
@@ -288,24 +313,33 @@
                    <button class="btn"><a href="#">SHOW MORE PLACES</a></button>
                 </div>
            </section>
-           <section class="container-two">
-                <figure>
+           <section id="contact" class="container-two contact-us ">
+                <figure  class="font-0 position-realtive">
                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.9917764417693!2d76.35588059999999!3d32.2072353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e1!3m2!1sen!2sin!4v1631855475134!5m2!1sen!2sin" width="1400" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </figure>
-                <form action="index.html" method="POST">
-                 <input  class="form-control " type="text" name="name" placeholder="Name">
-                 <input  class="form-control " type="email" name="email">
-                 <input  class="form-control " type="text" name="subject" placeholder="Subject">
-                 <textarea  class="form-control " name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                 <input class="form-control "  type="submit" name="submit" value="submit" placeholder="Submit">
+                <div class="overlay">
+                </div>
+                    <form  action="index.html" method="POST"> 
+                        <fieldset>
+                          <div class="flex" >
 
-                </form>
+                              <input  class="form-control flex-46" type="text" name="name" placeholder="Name">
+                              <input  class="form-control flex-46 " type="email" name="email" placeholder="Email">
+                            </div>
+                            <input  class="form-control " type="text" name="subject" placeholder="Subject">
+                            <textarea  class="form-control " name="Message" id=""  rows="6" placeholder="Message"></textarea>
+                            <input class=" btn btn-primary "  type="submit" name="submit" value="submit" placeholder="Submit">
+                        </fieldset>
+                    </form>
+               
             </section>
-            </main>
             <footer class="footer container-two">
                 <strong class="center">
                     Copyright &copy; 2020 Your Company. Deigned by Template Mo
                 </strong>
             </footer>
+            </main>
+           
+            
 </body>
 </html>
