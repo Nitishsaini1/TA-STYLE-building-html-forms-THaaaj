@@ -54,11 +54,18 @@ a{
 .hover-header a:hover{
     color: var(--secondary) !important;
 }
+.margin-top{
+    margin-top: 60px;
+}
+.font-0{
+    font-size: 0;
+}
 /* variables */
 :root{
     --primary: rgb(230, 230, 230);
     --secondary: rgb(105, 198, 186);
     --tertiary: #c66995;
+    --text-area:rgb(12, 11, 11);
 }
 /*  flex */
 .flex{
@@ -68,21 +75,32 @@ a{
 .flex-2{
     display: flex;
 }
+.justify-center{
+    justify-content: center;
+}
 .align-center
 {
     align-items:center;
-    
+}
+.item-start{
+    align-items: flex-start;
 }
 .center{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.flex-50{
+    flex: 0 0 50%;
+}
+.flex-46{
+   flex: 0 0 46%;
+}
 /*  styles  */
 body{
     line-height: 1.5;
    
-    padding: 2% 0;
+    padding-top: 2% ;
     font-family: 'Roboto', sans-serif;
 }
 .container{
@@ -167,14 +185,15 @@ strong{
 /* banner  */
 .banner-image{
     width: 100%;
-    height: 700px;
-    background:linear-gradient(rgb(22,12,15,0.7), rgb(6,8,8,0.5)),  url(../media/hero/banner.jpg);
+    background:linear-gradient(rgb(22,12,15,0.7), rgb(6,8,8,0.5)),  url(../media/hero/banner.jpg) no-repeat;
+    background-size: cover;
 }
 .header-banner{
     text-align: center;
+    padding-bottom: 60px;
 }
 .header-banner blockquote{
-    font-size: 30px;
+    font-size: 25px;
     color: #fff;
     font-weight: 300;
 }
@@ -182,10 +201,36 @@ strong{
     font-size: 30px;
     color: var(--secondary);
 }
-.form-control-1{
+/* form */
+form{
     background-color: #fff;
-    width: 70%;
-    height: 300px;
+    max-width: 950px;
+    margin: 0 auto;
+    padding:  32px;
+    margin-top: 80px;
+}
+label{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-area);
+    text-align: left;
+    margin-bottom: 8px;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 12px 16px;
+    border: 1px solid transparent;
+}
+.form-control:focus{
+    border-color: var(--secondary);
+}
+form .btn{
+    width: 100%;
+    text-transform: uppercase;
 }
 /*  tourist places */
 .tourist-place{
@@ -261,7 +306,7 @@ figcaption{
     background-color: var(--secondary);
 }
 .pricing-text{
-  
+    
     color: #fff;
     width: 200px;
 }
@@ -280,6 +325,7 @@ figcaption{
 }
 .asia-container-margin-bottom{
     margin-bottom: 20px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
 }
 .btn-third{
     max-width: 120px;
@@ -291,7 +337,41 @@ figcaption{
     letter-spacing: 2px;
     font-weight: 600;
 }
+.contact-us{
+    position:relative;
+}
+.contact-us form{
+    position: absolute;
+    bottom: 40px;
+    right:  30px;
+    width: 30%;
+}
+/* .contact-us .form-control{
+       
+} */
+.contact-us .form-control {
+  
+    background-color: #f3f3f3;
+    margin: 4px 0;
+}
+textarea{
+    background-color: #f3f3f3;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 .footer{
     background-color: var(--secondary);
     color: var(--primary);
+}
+.footer .center
+{
+    font-size: 19px;
+    font-weight: 400;    
+    padding: 32px 0;
 }
